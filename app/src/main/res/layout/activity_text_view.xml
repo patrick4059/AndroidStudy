@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_two"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:shadowColor="@color/red"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:singleLine="true"
+        android:text="你好世界的师父所说的打发撒旦公司的士大夫随风倒"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"></TextView>
+    <!--设置阴影-->
+    <!--    android:shadowColor="@color/red"  // 设置阴影颜色-->
+    <!--    android:shadowRadius="3.0"  // 设置阴影模糊度-->
+    <!--    android:shadowDx="10.0" // 设置阴影X轴的位移-->
+    <!--    android:shadowDy="10.0" // 设置阴影Y轴的位移-->
+    <!--设置跑马灯-->
+    <!--    android:singleLine="true" // 将文字一行显示-->
+    <!--    android:ellipsize="marquee" // 在哪里省略文本-->
+    <!--    android:marqueeRepeatLimit="marquee_forever" // 动画重复次数-->
+    <!--    android:focusableInTouchMode="true" // 用于控制视图在触摸模式下是否可以聚焦-->
+    <!--    android:focusable="true" // 是否可以获取焦点-->
+
+</LinearLayout>
