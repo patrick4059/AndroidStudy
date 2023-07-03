@@ -8,6 +8,7 @@
         android:id="@+id/tv_two"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:clickable="true"
         android:ellipsize="marquee"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -33,5 +34,48 @@
     <!--    android:marqueeRepeatLimit="marquee_forever" // 动画重复次数-->
     <!--    android:focusableInTouchMode="true" // 用于控制视图在触摸模式下是否可以聚焦-->
     <!--    android:focusable="true" // 是否可以获取焦点-->
+    <!--    android:clickable="true"    // 设置成可点击，点击后跑马灯才开始循环-->
 
+<!--    使用自定义类设置跑马灯自动循环-->
+    <com.patrick.myapplication.MyTextView
+        android:id="@+id/tv_one"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:shadowColor="@color/red"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:singleLine="true"
+        android:text="你好世界的师父所说的打发撒旦公司的士大夫随风倒"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"></com.patrick.myapplication.MyTextView>
+
+<!--    使用<requestFocus/>让跑马灯自动循环-->
+    <TextView
+        android:id="@+id/tv_three"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:shadowColor="@color/red"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:singleLine="true"
+        android:text="你好世界的师父所说的打发撒旦公司的士大夫随风倒"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic">
+        <requestFocus/>
+    </TextView>
 </LinearLayout>
